@@ -1,0 +1,161 @@
+//Color and typograpgy variables
+
+$primary-color: #519251;
+
+$primary-light: lighten($primary-color, 30%);
+
+$secondary-color: #2c4985;
+
+$secondary-light: lighten($secondary-color, 30%);
+
+$tertiary-color: #868686;
+
+$white: #fff;
+
+$alt-white: rgba($white, .5);
+
+$black: #414141;
+
+$alt-black: lighten($black, 60%);
+
+$light-grey: #f7f7f7;
+
+$helvetica: Helvetica, Arial, sans-serif;
+
+$font-size: 1em;
+
+$h1-size: $font-size * 2;
+
+$h2-size: $font-size * 1.5;
+
+$border-style: 1px solid $alt-black;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+h1 {
+  color: white;
+  font-family: $helvetica;
+  font-size: $h1-size;
+  margin: 0;
+  text-shadow: 2px 2px $black;
+}
+
+// NAV
+
+nav {
+  background: $white;
+  height: 42px;
+  margin-left: 1em;
+  color: $tertiary-color;
+
+  ul {
+    list-style-type: none;
+    li {
+      display: inline-block;
+      margin-right: 1em;
+      font-family: $helvetica;
+      font-size: $font-size;
+      line-height: 42px;
+    }
+  }
+}
+
+.logo-text {
+  text-transform: uppercase
+}
+
+.current-page {
+  color: $black;
+}
+
+
+// Hero
+
+.hero {
+  background: url(../img/background.jpg);
+  height: 200px;
+
+  .hero-text {
+    max-width: 297px;
+    padding-top: 50px;
+    margin: 0 auto;
+  }
+}
+
+// Pricing
+
+.individual-price-box {
+  border: 1px solid $alt-black;
+  margin: 1em;
+
+}
+
+.price-top-a {
+  background: $primary-color;
+  padding: 10px;
+  .price-text {
+    color: $white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  
+    .type {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  
+    .cost {
+      font-size: 4em;
+    }
+  
+    .per-month {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: $alt-white;
+    }
+  }
+}
+
+.price-top-b {
+  @extend .price-top-a;
+  background: $secondary-color;
+}
+
+.price-top-c {
+  @extend .price-top-a;
+  background: $black;
+}
+
+.benefits {
+  background: $light-grey;
+
+  ul {
+    list-style-type: none;
+    text-align: center;
+    
+    li {
+      color: $black;
+      border-bottom: $border-style;
+      padding: 10px;
+    }
+  }
+}
+
+.choose-box {
+  padding: 20px;
+  text-align: center;
+  button {
+    background: $white;
+    border: $border-style;
+    color: $black;
+    font-weight: bold;
+    padding: 10px;
+    @include border-radius(25px);
+  }
+}
+
+

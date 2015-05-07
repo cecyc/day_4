@@ -1,0 +1,85 @@
+h1 {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  margin: 0;
+  text-shadow: 2px 2px #414141; }
+
+nav {
+  background: #fff;
+  height: 42px;
+  margin-left: 1em;
+  color: #868686; }
+  nav ul {
+    list-style-type: none; }
+    nav ul li {
+      display: inline-block;
+      margin-right: 1em;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 1em;
+      line-height: 42px; }
+
+.logo-text {
+  text-transform: uppercase; }
+
+.current-page {
+  color: #414141; }
+
+.hero {
+  background: url(../img/background.jpg);
+  height: 200px; }
+  .hero .hero-text {
+    max-width: 297px;
+    padding-top: 50px;
+    margin: 0 auto; }
+
+.individual-price-box {
+  border: 1px solid #dadada;
+  margin: 1em; }
+
+.price-top-a, .price-top-b, .price-top-c {
+  background: #519251;
+  padding: 10px; }
+  .price-top-a .price-text, .price-top-b .price-text, .price-top-c .price-text {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+    .price-top-a .price-text .type, .price-top-b .price-text .type, .price-top-c .price-text .type {
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+    .price-top-a .price-text .cost, .price-top-b .price-text .cost, .price-top-c .price-text .cost {
+      font-size: 4em; }
+    .price-top-a .price-text .per-month, .price-top-b .price-text .per-month, .price-top-c .price-text .per-month {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: rgba(255, 255, 255, 0.5); }
+
+.price-top-b {
+  background: #2c4985; }
+
+.price-top-c {
+  background: #414141; }
+
+.benefits {
+  background: #f7f7f7; }
+  .benefits ul {
+    list-style-type: none;
+    text-align: center; }
+    .benefits ul li {
+      color: #414141;
+      border-bottom: 1px solid #dadada;
+      padding: 10px; }
+
+.choose-box {
+  padding: 20px;
+  text-align: center; }
+  .choose-box button {
+    background: #fff;
+    border: 1px solid #dadada;
+    color: #414141;
+    font-weight: bold;
+    padding: 10px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px; }
