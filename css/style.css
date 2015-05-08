@@ -1,9 +1,12 @@
 h1 {
   color: white;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 2em;
   margin: 0;
   text-shadow: 2px 2px #414141; }
+
+p, h2, li {
+  font-family: "Open Sans", Arial, sans-serif; }
 
 nav {
   background: #fff;
@@ -15,7 +18,7 @@ nav {
     nav ul li {
       display: inline-block;
       margin-right: 1em;
-      font-family: Helvetica, Arial, sans-serif;
+      font-family: "Open Sans", Arial, sans-serif;
       font-size: 1em;
       line-height: 42px; }
 
@@ -142,3 +145,19 @@ footer {
   .value-prop-text {
     float: left;
     width: 47%; } }
+@media screen and (min-width: 979px) {
+  .pricing {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3em 0 3em 0; }
+    .pricing .individual-price-box {
+      width: 31%; }
+
+  .value-prop {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 2em; }
+    .value-prop .value-prop-text {
+      width: 40%;
+      padding: 13px;
+      margin-left: 40px; } }

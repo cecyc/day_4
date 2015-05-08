@@ -2,11 +2,7 @@
 
 $primary-color: #519251;
 
-$primary-light: lighten($primary-color, 30%);
-
 $secondary-color: #2c4985;
-
-$secondary-light: lighten($secondary-color, 30%);
 
 $tertiary-color: #868686;
 
@@ -20,7 +16,7 @@ $alt-black: lighten($black, 60%);
 
 $light-grey: #f7f7f7;
 
-$helvetica: Helvetica, Arial, sans-serif;
+$typography: 'Open Sans', Arial, sans-serif;
 
 $font-size: 1em;
 
@@ -38,10 +34,14 @@ $border-style: 1px solid $alt-black;
 
 h1 {
   color: white;
-  font-family: $helvetica;
+  font-family: $typography;
   font-size: $h1-size;
   margin: 0;
   text-shadow: 2px 2px $black;
+}
+
+p, h2, li {
+  font-family: $typography;
 }
 
 // NAV
@@ -57,7 +57,7 @@ nav {
     li {
       display: inline-block;
       margin-right: 1em;
-      font-family: $helvetica;
+      font-family: $typography;
       font-size: $font-size;
       line-height: 42px;
     }
@@ -236,5 +236,26 @@ footer {
   .value-prop-text {
     float: left;
     width: 47%;
+  }
+}
+
+@media screen and (min-width:979px) {
+  .pricing {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3em 0 3em 0;
+    .individual-price-box {
+      width: 31%;
+    }
+  }
+  .value-prop {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    .value-prop-text {
+      width: 40%;
+      padding: 13px;
+      margin-left: 40px;
+    }
   }
 }
