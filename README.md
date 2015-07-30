@@ -1,3 +1,3 @@
-##Day 2 TIY: Responsive layouts
+##Responsive landing page layout
 
-For Day 4 of The Iron Yard Rails program, we're going over media queries. This is a responsive prototype for a fake product.
+This is a fully responsive landing page layout built with HTML5 and Sass.
